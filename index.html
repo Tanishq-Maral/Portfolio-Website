@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanishq | Portfolio</title>
+    <meta name="description"
+        content="Tanishq — Creative Developer & Designer. Explore my projects, skills and experience.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-line"></div>
+            <div class="loader-text">
+                <span>T</span><span>A</span><span>N</span><span>I</span><span>S</span><span>H</span><span>Q</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span><span style="color: rgb(225, 225, 225);">Tanishq</span><span
+                    class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                <a href="#achievements" class="nav-link" data-section="achievements">Achievements</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span> Available for work
+            </div>
+            <h1 class="hero-title reveal">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-name">
+                    <span class="name-letter" style="--i:0">T</span><span class="name-letter"
+                        style="--i:1">a</span><span class="name-letter" style="--i:2">n</span><span class="name-letter"
+                        style="--i:3">i</span><span class="name-letter" style="--i:4">s</span><span class="name-letter"
+                        style="--i:5">h</span><span class="name-letter" style="--i:6">q</span>
+                </span>
+            </h1>
+            <div class="hero-role reveal">
+                <span class="role-prefix">I'm a</span>
+                <span class="typing-container">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </span>
+            </div>
+            <!-- <p class="hero-description reveal">
+                I craft beautiful digital experiences with clean code and creative design. Passionate about building
+                products that make a difference.
+            </p> -->
+            <div class="hero-actions reveal">
+                <a href="#projects" class="btn btn-outline">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>Let's Talk</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <!-- <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-number" data-target="25">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years Exp.</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+            </div> -->
+        </div>
+        <div class="hero-visual reveal">
+            <div class="hero-image-wrapper">
+                <div class="hero-image-glow"></div>
+                <div class="hero-image-border"></div>
+                <div class="hero-avatar">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+                <div class="orbit-ring">
+                    <div class="orbit-dot" style="--angle: 0deg"><i class="fab fa-react"></i></div>
+                    <div class="orbit-dot" style="--angle: 60deg"><i class="fab fa-node-js"></i></div>
+                    <div class="orbit-dot" style="--angle: 120deg"><i class="fab fa-python"></i></div>
+                    <div class="orbit-dot" style="--angle: 180deg"><i class="fab fa-figma"></i></div>
+                    <div class="orbit-dot" style="--angle: 240deg"><i class="fab fa-js"></i></div>
+                    <div class="orbit-dot" style="--angle: 300deg"><i class="fab fa-git-alt"></i></div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div> -->
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+                <!-- <h2 class="section-title">Crafting Efficient <span class="gradient-text">Solutions</span></h2>
+                <p class="section-subtitle">A passionate developer who loves turning ideas into reality</p> -->
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-img-card">
+                        <img src="Tanishq_linkedin_profile_pic_crop.jpg" alt="Tanishq" class="about-img">
+                        <!-- <div class="floating-card card-1">
+                            <i class="fas fa-palette"></i>
+                            <span>AI/ML Developer</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-rocket"></i>
+                            <span>Full Stack Developer</span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="about-content reveal">
+                    <h3>A bit about myself</h3>
+                    <p>I'm an Artificial Intelligence and Data Science student at Pune Institute of Computer Technology
+                        (PICT), passionate about full-stack software development, machine learning, and computer vision
+                        systems. I enjoy translating complex algorithmic logic into high-performing, interactive digital
+                        products.</p>
+                    <p>My journey centers around continuous learning and problem-solving, which has driven me to excel
+                        across competitive programming contests and developer hackathons. I thrive in collaborative
+                        environments and love crafting robust code architectures.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pune, India</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>SDE Intern & Student</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.E. in AI & DS (CGPA: 9.19)</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Algorithmic Developer</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-cogs"></i> Skills</span>
+                <h2 class="section-title">My Tech Stack</span></h2>
+                <p class="section-subtitle">Technologies and tools I work with on a daily basis</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title"><i class="fas fa-laptop-code"></i> Languages & Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <span>C++ & Java</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span>Python</span>
+                            <div class="skill-level" data-level="92"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <span>JS & TS</span>
+                            <div class="skill-level" data-level="95"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <span>React.js</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <span>HTML5 & CSS3</span>
+                            <div class="skill-level" data-level="95"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-wind"></i></div>
+                            <span>Tailwind CSS</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title"><i class="fas fa-server"></i> Backend & Databases</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <span>Node & Express</span>
+                            <div class="skill-level" data-level="88"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                            <span>RESTful APIs</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span>MongoDB & MySQL</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                            <span>AWS</span>
+                            <div class="skill-level" data-level="70"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <span>Git & GitHub</span>
+                            <div class="skill-level" data-level="92"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                            <span>Tools (VS Code, Colab)</span>
+                            <div class="skill-level" data-level="88"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title"><i class="fas fa-brain"></i> AI/ML & Core CS</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                            <span>TensorFlow & Scikit-learn</span>
+                            <div class="skill-level" data-level="82"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-eye"></i></div>
+                            <span>OpenCV & MediaPipe</span>
+                            <div class="skill-level" data-level="85"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                            <span>Pandas & Matplotlib</span>
+                            <div class="skill-level" data-level="88"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                            <span>Data Structures & Algos (DSA)</span>
+                            <div class="skill-level" data-level="95"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+                            <span>OOP Concepts</span>
+                            <div class="skill-level" data-level="90"></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <span>OS, DBMS & Networks</span>
+                            <div class="skill-level" data-level="86"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-folder-open"></i> Projects</span>
+                <h2 class="section-title">Featured Work</span></h2>
+                <p class="section-subtitle">A selection of projects I've worked on recently</p>
+            </div>
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="ai-ml">AI / ML</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Tripify -->
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--hue: 200">
+                            <i class="fas fa-plane-departure"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://www.tripifyyy.me/" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Tanishq-Maral/Tripify" target="_blank" rel="noopener noreferrer"
+                                class="project-link" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tripifyyy</h3>
+                        <p>Full-stack MERN travel planning platform featuring secure JWT authentication, trip
+                            management, advanced search/filtering, and AWS/Vercel cloud deployment. Integrated Socket.io
+                            for real-time group chat (<200ms latency) supporting 100+ concurrent users.</p>
+                                <div class="project-tags">
+                                    <span>Node.js</span><span>React.js</span><span>MongoDB</span><span>Socket.io</span><span>JWT</span><span>AWS</span>
+                                </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Stock Trend Predictor -->
+                <div class="project-card reveal" data-category="ai-ml">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--hue: 140">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Tanishq-Maral/Stock-Price-Prediction" target="_blank"
+                                rel="noopener noreferrer" class="project-link" aria-label="GitHub Repository"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Stock Price Predictor</h3>
+                        <p>Deep learning TensorFlow model trained on historical stock market records to forecast price
+                            trends, achieving 88% directional prediction accuracy. Coordinated a 4-member development
+                            team using Git version control.</p>
+                        <div class="project-tags">
+                            <span>TensorFlow</span><span>yFinance</span><span>Scikit-learn</span><span>Pandas</span><span>Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Hand Gesture Navigator -->
+                <div class="project-card reveal" data-category="ai-ml">
+                    <div class="project-image">
+                        <div class="project-placeholder" style="--hue: 280">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Tanishq-Maral/Hand-Gesture-Based-Video-Navigator"
+                                target="_blank" rel="noopener noreferrer" class="project-link"
+                                aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Hand Gesture Video Navigator</h3>
+                        <p>Real-time computer vision system enabling gesture-based Play, Pause, Forward, and Rewind
+                            video navigation with 95%+ recognition accuracy. Processed 21 hand landmarks per frame and
+                            optimized a CNN pipeline for real-time (25–30 FPS) performance.</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>CNN</span><span>Computer
+                                Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Experience</span>
+                <h2 class="section-title">Professional Journey</span></h2>
+                <p class="section-subtitle">My career timeline and achievements</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>SDE Intern</h3>
+                            <span class="timeline-company"><i class="fas fa-building"></i> LSOYS Games and Apps</span>
+                        </div>
+                        <span class="timeline-date">Feb 2026 – Apr 2026 (Remote)</span>
+                        <p>Developed RESTful API endpoints for message template creation and campaign management using
+                            Google Sheets for 500+ recipients. Engineered automated follow-up workflows and granular
+                            per-recipient tracking with threaded reply mechanics, saving 10+ hours of weekly manual
+                            logging.</p>
+                        <div class="timeline-tags">
+                            <span>Node.js</span><span>Express.js</span><span>RESTful APIs</span><span>Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Bachelor of Engineering (AI & DS)</h3>
+                            <span class="timeline-company"><i class="fas fa-graduation-cap"></i> Pune Institute of
+                                Computer Technology</span>
+                        </div>
+                        <span class="timeline-date">Aug 2023 – Jun 2027 (Pune, India)</span>
+                        <p>Pursuing B.E. in Artificial Intelligence and Data Science. Maintaining a cumulative CGPA of
+                            9.19/10. Studying core concepts including Data Structures & Algorithms, OOP, Operating
+                            Systems, Database Management, and Computer Networks.</p>
+                        <div class="timeline-tags">
+                            <span>PICT</span><span>AI & DS</span><span>CGPA: 9.19</span><span>Core CS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section achievements reveal" id="achievements">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-trophy"></i> Achievements</span>
+                <h2 class="section-title">Milestones & Accolades</span></h2>
+                <p class="section-subtitle">Highlights of my competitive programming, hackathons, and algorithmic
+                    ratings</p>
+            </div>
+            <div class="achievements-grid">
+                <!-- Card 1: ICPC CodeFest -->
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-badge">Global Rank 968</span>
+                        <h3>IICPC CodeFest 2026</h3>
+                        <p class="achievement-desc">Secured Global Rank 968 (Top 7.5%) among 13,000+ participants in the
+                            IICPC CodeFest 2026 Global Prelims Round.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Reverse Coding -->
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-badge">2nd Runner-up</span>
+                        <h3>Reverse Coding – XENIA’26</h3>
+                        <p class="achievement-desc">Awarded Second Runner-up in Reverse Coding – XENIA’26 (organized by
+                            PICT CSI).</p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Hackathon Finalist -->
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-badge">Finalist</span>
+                        <h3>VIT CODE VERSE</h3>
+                        <p class="achievement-desc">Selected as a Finalist in the VIT CODE VERSE (24-hour Hackathon) for
+                            rapid software prototyping.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4: Algorithmic Ratings -->
+                <div class="achievement-card rating-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-badge">Elite Programmer</span>
+                        <h3>Algorithmic Ratings</h3>
+                        <p class="achievement-desc">Earned elite algorithmic ratings across 90+ programming contests:
+                        </p>
+                        <div class="rating-badges">
+                            <a href="https://leetcode.com/u/tanishq_maral/" target="_blank" rel="noopener noreferrer"
+                                class="rating-badge leetcode">
+                                <span class="rating-platform"><i class="fas fa-code"></i> LeetCode</span>
+                                <span class="rating-rank">Knight (2014) <i class="fas fa-external-link-alt"
+                                        style="font-size: 0.75rem; margin-left: 4px; opacity: 0.7;"></i></span>
+                            </a>
+                            <a href="https://codeforces.com/profile/tanishq_maral" target="_blank"
+                                rel="noopener noreferrer" class="rating-badge codeforces">
+                                <span class="rating-platform"><i class="fas fa-terminal"></i> Codeforces</span>
+                                <span class="rating-rank">Specialist (1404) <i class="fas fa-external-link-alt"
+                                        style="font-size: 0.75rem; margin-left: 4px; opacity: 0.7;"></i></span>
+                            </a>
+                            <a href="https://www.codechef.com/users/tanishqmaral" target="_blank"
+                                rel="noopener noreferrer" class="rating-badge codechef">
+                                <span class="rating-platform"><i class="fas fa-fire"></i> CodeChef</span>
+                                <span class="rating-rank">3-Star (1654) <i class="fas fa-external-link-alt"
+                                        style="font-size: 0.75rem; margin-left: 4px; opacity: 0.7;"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Contact</span>
+                <h2 class="section-title">Let's Work Together</span></h2>
+                <p class="section-subtitle">Have a project in mind? I'd love to hear about it</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="
+                             fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>tanishqmaral@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h4>Location</h4>
+                        <p>Pune, India</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+                        <h4>Phone</h4>
+                        <p>+91 8446549759</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Tanishq-Maral" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tanishq-maral/" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://leetcode.com/u/tanishq_maral/" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="LeetCode"><i class="fas fa-code" title="LeetCode"></i></a>
+                        <a href="https://codeforces.com/profile/tanishq_maral" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="Codeforces"><i class="fas fa-terminal"
+                                title="Codeforces"></i></a>
+                        <a href="https://www.codechef.com/users/tanishqmaral" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="CodeChef"><i class="fas fa-fire" title="CodeChef"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="example@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Project Discussion">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>T<span class="logo-slash">/</span><span
+                        class="logo-bracket">&gt;</span>
+                </div> -->
+                <p class="footer-text">Designed & Built by Tanishq</p>
+                <p class="footer-copy">&copy; 2026 All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
